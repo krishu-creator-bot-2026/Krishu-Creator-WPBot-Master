@@ -4,25 +4,17 @@
   "description": "🔥 1000+ Commands WhatsApp Bot | Free 24/7 Host | All Country Codes",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": ["whatsapp-bot", "krishu-bot", "wp-bot", "1000-commands"],
+  "keywords": ["whatsapp-bot", "krishu-bot", "wp-bot"],
   "author": "Krishu Creator",
   "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.5",
     "qrcode-terminal": "^0.12.0",
     "pino": "^8.21.0",
-    "node-fetch": "^2.7.0",
-    "fs": "0.0.1-security",
-    "path": "^0.12.7",
     "express": "^4.21.0",
     "axios": "^1.7.7",
-    "cheerio": "^1.0.0",
-    "google-it": "^1.6.4",
-    "ytdl-core": "^4.11.5",
-    "tiktok-scraper": "^1.3.1",
-    "translate-google": "^1.5.0"
+    "node-fetch": "^2.7.0"
   }
 }
