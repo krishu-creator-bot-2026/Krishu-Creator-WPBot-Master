@@ -930,10 +930,14 @@ async function handleCommand(sock, msg) {
 
 // ===== DOWNLOAD MEDIA =====
 async function downloadMedia(sock, msg) {
-  const stream = await sock.downloadMediaMessage(msg);
-  return stream;
+  try {
+    const buffer = await sock.downloadMediaMessage(msg, {});
+    return Buffer.isBuffer(buffer) ? buffer : Buffer.from(buffer);
+  } catch (e) {
+    console.log('Download error:', e.message);
+    return null;
+  }
 }
-
 // ===== LOAD CUSTOM COMMANDS =====
 function loadCustomCommands() {
   try {
